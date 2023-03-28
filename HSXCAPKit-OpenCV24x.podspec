@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.homepage     = "http://opencv.org"
   s.license      = "MIT"
   s.author       = "opencv.org"
-  s.platform     = :ios, "10.0.0"
+  s.platform     = :ios, "11.0.0"
   s.source       = { :git => "https://github.com/longzl/HSXCAPKit-OpenCV24x.git", :tag => "v#{s.version}" }
   s.ios.vendored_frameworks = 'opencv2.framework'
   s.libraries = "c++"
@@ -22,5 +22,5 @@ Pod::Spec.new do |s|
   s.requires_arc = false
   s.source_files  = 'fwrite2003.c'
 
-  # s.dependency 'HSXCAPKit-3rdparty-libs', '~> 0.1.0'
+  s.dependency 'HSXCAPKit-3rdparty-libs', '~> 0.1.0'
 end
